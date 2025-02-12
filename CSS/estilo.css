@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #03356e;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px; 
+    height: auto;
+    margin-right: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0a5bc6;
+}
+nav ul li {
+    margin: 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+.search-box input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #c5bdbd;
+    border-radius: 5px;
+}
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3xfila */
+    grid-auto-flow: row; /* las tarjetas salen en fila */
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 900px) {
+    .student-grid {
+        grid-template-columns: repeat(2, 1fr); /* responsive? */
+    }
+}
+
+@media (max-width: 600px) {
+    .student-grid {
+        grid-template-columns: 1fr; /* responsive */
+    }
+}
+
+.student-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.student-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.student-card h3 {
+    margin: 10px 0;
+}
+.student-card button {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.student-card button:hover {
+    background-color: #002855;
+
+
+
+}
+footer {
+    text-align: center; /* Centra todo el contenido dentro del footer */
+    background-color: #052345; /* Color de fondo (puedes cambiarlo) */
+    color: white;
+    padding: 20px;
+}
+
+footer img {
+    width: 200px; 
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; 
+}
